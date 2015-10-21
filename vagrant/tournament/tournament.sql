@@ -7,3 +7,17 @@
 -- these lines here.
 
 
+
+DROP TABLE IF EXISTS Players;
+create table Players (
+
+	"id" serial primary key,
+	"name" varchar(20)
+);
+
+DROP TABLE IF EXISTS Matches;
+create table Matches (
+	"id" serial primary key,
+	"winner_id" integer,
+	"loser_id" integer
+);
